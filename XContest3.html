@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="jv.js"></script>
+    <title>Sự Kiện Ngày Tết 2023</title>
+    <link rel="stylesheet" href="cssr.css">
+    <link rel="stylesheet" href="XContest.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&family=Shantell+Sans:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="track11">
+        <div class="headed">
+            <a href="XContest1.html" class="bi" style="width: 85px;"><i class="fa fa-home"
+                    style="font-size:35px;color:rgb(171, 12, 177)"></i></a>
+            <a href="XContest1.html" class="son">HOME</a>
+            <a href="XContest2.html" class="son">ABOUT</a>
+            <a href="XContest3.html" class="son">FORM</a>
+        </div>
+
+        <div class="mainde"> <br><br>
+            <div class="maia" style="
+            width: 504px;
+            height: 374px;
+        ">
+                <h3 class="h3aa">Dear Your Email </h3> <br>
+                <center>
+
+
+                    Dear
+                    <input type="text" name="Dear" id="Dear" class="finr">
+                    <br>
+
+
+
+                    Name
+                    <input type="text" name="lname" id="lname" class="finr">
+                    <br>
+
+                    Email
+                    <input type="text" name="email" id="email" class="finr">
+                    <br>
+
+                    Age
+                    <input type="number" name="age" id="age" class="finr">
+                    <br>
+
+                    Live
+                    <input type="text" name="live" id="live" class="finr">
+                    <br>
+
+                    Text
+                    <textarea name="mess" id="mess" placeholder="Next to writer here " required=""></textarea>
+                    <br>
+                    <input type="button" name="button" id="btn" value="Add" href="#show" onclick="AddRow()" style="
+                                width: 54px;"> <a href="#no">Check</a><br>
+                                
+
+
+
+                </center>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="no"><br><br><br>
+            <div class="endkt" id="h1a2" style="
+    width: 750px;
+">
+                <table border="4" id="show" style="margin: 0 auto;">
+                    <thead>
+                        <tr>
+                            <th style="
+width: 42px;
+">Dear </th>
+                            <th style="
+width: 82px;
+">My Name</th>
+                            <th style="
+width: 52px;
+">Email</th>
+                            <th style="
+width: 37px;
+">Age</th>
+                            <th style="
+width: 42px;
+">Live</th>
+                            <th class="forma1" style="
+width: 352px;
+">Form</th>
+                        </tr>
+                    </thead>
+                </table>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <script>
+
+                var list1 = [];
+                var list2 = [];
+                var list3 = [];
+                var list4 = [];
+                var list5 = [];
+                var list6 = [];
+
+                var n = 1;
+                var x = 0;
+
+                function AddRow() {
+
+                    var AddRown = document.getElementById('show');
+                    var NewRow = AddRown.insertRow(n);
+
+                    list1[x] = document.getElementById("Dear").value;
+                    list2[x] = document.getElementById("lname").value;
+                    list3[x] = document.getElementById("email").value;
+                    list4[x] = document.getElementById("age").value;
+                    list5[x] = document.getElementById("live").value;
+                    list6[x] = document.getElementById("mess").value;
+
+                    var cel1 = NewRow.insertCell(0);
+                    var cel2 = NewRow.insertCell(1);
+                    var cel3 = NewRow.insertCell(2);
+                    var cel4 = NewRow.insertCell(3);
+                    var cel5 = NewRow.insertCell(4);
+                    var cel6 = NewRow.insertCell(5);
+
+
+                    cel1.innerHTML = list1[x];
+                    cel2.innerHTML = list2[x];
+                    cel3.innerHTML = list3[x];
+                    cel4.innerHTML = list4[x];
+                    cel5.innerHTML = list5[x];
+                    cel6.innerHTML = list6[x];
+
+                    n++;
+                    x++;
+                }
+
+            </script>
+        </div>
+</body>
+
+</html>
